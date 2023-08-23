@@ -1,1 +1,6 @@
 .idea
+/node_modules/
+/allure-results/
+/chrome-win/
+/chrome-linux/
+/chrome-mac/
