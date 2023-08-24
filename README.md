@@ -2,7 +2,8 @@
 
 ## About
 WebdriverIO tests. Run with either docker for fast and simple, or install and configure the Repo.
-A lot of things can also be automated with CI/CD, but I took the liberty not to x(.
+A lot of things can also be automated with CI/CD, but I took the liberty not to x(. Also obviously
+you don't push .env file to the Repo, but this is for simplicity.
 
 ## With Docker
 ### TL;DR Just let me run it
