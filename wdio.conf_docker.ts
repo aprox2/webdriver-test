@@ -31,9 +31,13 @@ export const config: Options.Testrunner = {
         }
     }],
 
+
+    // Hostname should be equal to network name
+    // Could automate this with CI/CD
     hostname: 'selenium-hub',
     port: 4444,
     path: '/wd/hub',
+
 
     logLevel: 'info',
     baseUrl: 'https://facebook.com',
