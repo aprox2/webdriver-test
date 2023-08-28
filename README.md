@@ -42,7 +42,7 @@ Selenium-hub container, A Chrome Node container and Build your WebdriverIO image
 ``npm show chromedriver version``
 5. From https://chromium.cypress.io/ install the browser that fits your version. Move the ``chrome-{%OS%}`` folder
 inside the project root.
-6. Change the config file (``wdio.conf.ts``) so the binary path of Chrome is pointing to the binary of the portable browser.
+6. Change the config file (``wdio.conf.ts``) so the binary path of Chrome is pointing to the binary of the portable browser. (In a larger scale project, you would have your own config)
 <pre>
 capabilities: [{
     maxInstances: 5,
