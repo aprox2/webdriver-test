@@ -28,7 +28,7 @@ export const config: Options.Testrunner = {
         'goog:chromeOptions': {
             // binary: './chrome-win/chrome.exe',
             args: [
-                '--headless',
+                // '--headless',
                 '--disable-gpu',
                 '--no-sandbox',
                 '--disable-dev-shm-usage',
