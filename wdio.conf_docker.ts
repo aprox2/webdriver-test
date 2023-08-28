@@ -27,7 +27,13 @@ export const config: Options.Testrunner = {
         browserName: 'chrome',
         'goog:chromeOptions': {
             // binary: './chrome-win/chrome.exe',
-            args: ['--headless', '--disable-gpu', '--no-sandbox', '--disable-dev-shm-usage', '--window-size=1920,1080'],
+            args: [
+                '--headless',
+                '--disable-gpu',
+                '--no-sandbox',
+                '--disable-dev-shm-usage',
+                // Could be configured to run also on different res
+                '--window-size=1920,1080'],
         }
     }],
 
@@ -40,7 +46,7 @@ export const config: Options.Testrunner = {
 
 
     logLevel: 'info',
-    baseUrl: 'https://facebook.com',
+    baseUrl: 'https://asos.com',
 
     bail: 0,
     waitforTimeout: 10000,

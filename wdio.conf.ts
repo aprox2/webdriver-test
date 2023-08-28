@@ -1,13 +1,6 @@
 import type { Options } from '@wdio/types';
 import { browser } from '@wdio/globals';
 
-const drivers = {
-    chrome: { version: 'latest' }, // https://chromedriver.chromium.org/
-    firefox: { version: 'latest' }, // https://github.com/mozilla/geckodriver/releases
-    chromiumedge: { version: 'latest' } // https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
-}
-
-
 export const config: Options.Testrunner = {
 
     runner: 'local',
@@ -33,17 +26,19 @@ export const config: Options.Testrunner = {
         maxInstances: 5,
         browserName: 'chrome',
         'goog:chromeOptions': {
-            // binary: './chrome-win/chrome.exe',
-            args: ['--disable-gpu', '--no-sandbox', '--disable-dev-shm-usage', '--window-size=1920,1080'],
+            binary: './chrome-win/chrome.exe',
+            args: [
+                '--disable-gpu',
+                '--no-sandbox',
+                '--disable-dev-shm-usage',
+                // Could be configured to run also on different res
+                '--window-size=1920,1080'
+            ],
         }
     }],
 
-    // services: [
-    //     ['selenium-standalone', { drivers: { firefox: '0.33.0', chrome: true, chromiumedge: 'latest' } }]
-    // ],
-
     logLevel: 'info',
-    baseUrl: 'https://facebook.com',
+    baseUrl: 'https://asos.com',
 
     bail: 0,
     waitforTimeout: 10000,
