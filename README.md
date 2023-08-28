@@ -9,6 +9,9 @@ I ran into some problems writing the tests specifically for asos.com. It seems t
 they are preventing me from adding items to the basket. I added it as a test case. The error they return
 ![img.png](productApiResponse.png)
 
+Additionally, asos.com doesn't allow the access to their site with ``--headless`` enabled. Something that could
+be fixed in a development environment. For example a pre-production build.
+
 ## With Docker
 ### TL;DR Just let me run it
 1. Run either ``start_n_rebuild_docker.bat`` or ``start_n_rebuild_docker.sh`` based on your OS. This will run
