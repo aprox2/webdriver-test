@@ -26,7 +26,7 @@ describe('Checkout flows', () => {
 
         const productData: I_ProductData[] = []
 
-        for (const index of [3, 4]){
+        for (const index of [0, 1]){
             const productDescription = await MensShirtPage.getResultsDescriptionByIndex(index)
 
             // Add description to list for later comparisons
